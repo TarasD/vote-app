@@ -16,7 +16,11 @@ export default class App extends Component {
         <div className="container">
           <header>
             <h1>Votes App</h1>
-            <Link className="app-link" to="/">Home</Link>
+
+            { this.props.location.pathname != '/' ?
+                <Link className="app-link" to="/"><span className="fa fa-chevron-left"></span> Back</Link>
+                : ''
+            }
 
             <Login />
 

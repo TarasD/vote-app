@@ -16,9 +16,6 @@ export default class VoteListItem extends Component {
   }
 
   render() {
-    // Give tasks a different className when they are checked off,
-    // so that we can style them nicely in CSS
-
     let startButton, deleteButton;
     if(this.props.currentUser) {
       deleteButton = (

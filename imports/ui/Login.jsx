@@ -30,6 +30,7 @@ class Login extends Component {
 
   logout() {
     Meteor.logout();
+    this.showLoginForm();
   }
 
   render() {
@@ -40,7 +41,8 @@ class Login extends Component {
 
     return (
         <div className="login">
-          <span className="user-icon" onClick={this.showLoginForm.bind(this)}>User</span>
+          <span className="fa fa-user-circle user-icon" onClick={this.showLoginForm.bind(this)}></span>
+          {/*<span className="user-icon" onClick={this.showLoginForm.bind(this)}>User</span>*/}
           <div className={classes}>
             { !this.props.currentUser ?
                 <form className="login-form" onSubmit={this.handleSubmit.bind(this)}>

@@ -11,19 +11,13 @@ class VoteList extends Component {
 
   renderVotes() {
     return this.props.votes.map((vote) => {
-
-      if(!this.props.currentUser && !vote.start) {
-        return '';
-      }
-      else {
-        return (
-            <VoteListItem
-                key={vote._id}
-                vote={vote}
-                currentUser={this.props.currentUser}
-            />
-        );
-      }
+      return (
+          <VoteListItem
+              key={vote._id}
+              vote={vote}
+              currentUser={this.props.currentUser}
+          />
+      );
     });
   }
 

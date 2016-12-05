@@ -54,6 +54,7 @@ form.new-vote {
 }
 .user-icon {
   cursor: pointer;
+  font-size: 20px;
 }
 .login-wrapper {
   position: absolute;
@@ -63,6 +64,7 @@ form.new-vote {
   padding: 10px;
   background: white;
   box-shadow: 0 0 20px #999;
+  z-index: 10;
 }
 .login-form * {
   display: block;
@@ -136,6 +138,8 @@ form.new-vote {
 
 .app-link {
   margin-right: 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .vote-view-wrapper {
@@ -174,7 +178,30 @@ form.new-vote {
   right: 0;
   bottom: 115px;
   font-size: 20px;
+  font-weight: bold;
 }
 .total-votes * {
   margin: 0;
+}
+
+.votes-numbers {
+  position: absolute;
+  bottom: 125px;
+  left: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.vote-view-start {
+  display: block;
+  margin-left: auto;
+  width: 150px;
+  height: 40px;
+  border: none;
+  /*background: #d2edf4;*/
+  background-image: linear-gradient(to top, #d0edf5, #e1e5f0 100%);
+  font-size: 20px;
+  outline: none;
 }
