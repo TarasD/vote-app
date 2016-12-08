@@ -16,7 +16,6 @@ export default class PieChart extends Component {
   }
 
   arcGenerator(d, i) {
-    // let springParams = { stiffness: 300, damping: 6 };
     return (
         <Motion
             key={i}
@@ -36,11 +35,6 @@ export default class PieChart extends Component {
         </Motion>
 
     );
-
-    // <path key={`arc-${i}`}
-    //       d={this.arc(d)}
-    //       style={{fill: this.colors(i)}}>
-    // </path>
   }
 
   render() {
